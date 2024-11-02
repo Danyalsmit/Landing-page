@@ -25,8 +25,8 @@
    height:100%;
    max-width:300px;
    display:flex;
-   justify-content:cenetr;
-   align-items:ceneter;
+   justify-content:center;
+   align-items:center;
    text-align:center;
    margin-left:20px;
   }
@@ -80,7 +80,7 @@
   .grid{
     display:flex;
   }
-  #features .icon {
+.icon {
     color:darkorange;
     display:flex;
     align-items:center;
@@ -89,7 +89,7 @@
     width:20vw;
     
   }
-  #features .desc {
+.desc {
     display:flex;
     justify-content:center;
     flex-direction:column;
