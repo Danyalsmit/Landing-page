@@ -11,8 +11,11 @@
   }
   #header {
     display:flex;
-    flex-direction:row;
-   justify-content:space-around;
+    position: fixed;
+    min-height: 75px;
+    width: 100%;
+    top: 0;
+    justify-content:space-around;
     align-items:center;
    background-color:#eee;
    Padding:0px 20px;
@@ -53,7 +56,7 @@
     align-items:center;
     text-align:center;
     margin-top:50px;
-    height:100px;
+    height:200px;
   }
   
   #hero input[type='email'] {
@@ -176,6 +179,40 @@
     margin-top: 5px;
 
   }
+
+  /* Media Queries */
+  
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column; 
+      width: 100%; 
+      align-items: center; 
+  }
+  .product {
+      flex-direction: column; 
+  }
+  .product1 {
+      width: 100%; 
+  }
+  #hero {
+      height: auto; 
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .product {
+      flex-wrap: wrap; 
+  }
+  .product1 {
+      width: calc(50% - 20px); 
+  }
+}
+
+@media (min-width: 1025px) {
+  .product1 {
+      width: calc(33.33% - 20px); 
+  }
+}
   
   
   
